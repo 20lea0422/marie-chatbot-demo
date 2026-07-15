@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro Se Fair Play Mediation Assistant</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f4ec;
+      color: #172b57;
+    }
+
+    .demo-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    .chat-button {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      border: none;
+      border-radius: 999px;
+      padding: 15px 22px;
+      background: #1d3567;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .chat-window {
+      display: none;
+      position: fixed;
+      right: 24px;
+      bottom: 90px;
+      width: 340px;
+      max-width: calc(100% - 48px);
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.22);
+      overflow: hidden;
+    }
+
+    .chat-header {
+      background: #1d3567;
+      color: white;
+      padding: 18px;
+    }
+
+    .chat-body {
+      padding: 18px;
+    }
+
+    .message {
+      background: #f1eee6;
+      padding: 12px;
+      border-radius: 12px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .action-button {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 13px;
+      margin-top: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .text-button {
+      background: #b18a35;
+      color: white;
+    }
+
+    .book-button {
+      background: #1d3567;
+      color: white;
+    }
+
+    .close-button {
+      background: transparent;
+      color: white;
+      border: none;
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="demo-page">
+    <h1>Pro Se Fair Play Mediation</h1>
+    <p>A process you can trust. A space where you feel safe.</p>
+
+    <p>
+      This is a test page demonstrating how a website assistant could
+      appear on Marie's website.
+    </p>
+  </main>
+
+  <button class="chat-button" onclick="openChat()">
+    Chat With Us
+  </button>
+
+  <section class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <button class="close-button" onclick="closeChat()">×</button>
+      <strong>Pro Se Fair Play Assistant</strong>
+    </div>
+
+    <div class="chat-body">
+      <div class="message">
+        Hi, I’m Marie’s virtual assistant. I can help you learn about
+        mediation services, document preparation, and scheduling.
+      </div>
+
+      <a
+        class="action-button text-button"
+        href="sms:+‪15619410896‬?body=Hello%20Marie%2C%20I%20visited%20your%20website%20and%20would%20like%20more%20information."
+      >
+        Text Marie
+      </a>
+
+      <a
+        class="action-button book-button"
+        href="https://prosefairplaymediation.com/book/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Book a Consultation
+      </a>
+    </div>
+  </section>
+
+  <script>
+    function openChat() {
+      document.getElementById("chatWindow").style.display = "block";
+    }
+
+    function closeChat() {
+      document.getElementById("chatWindow").style.display = "none";
+    }
+  </script>
+</body>
+</html>
